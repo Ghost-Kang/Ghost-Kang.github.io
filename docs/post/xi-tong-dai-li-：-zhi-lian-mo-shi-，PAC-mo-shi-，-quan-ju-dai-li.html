@@ -9,7 +9,32 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="系统代理：直连模式，PAC模式，全局代理">
+<meta name="description" content="系统代理模式：
+在系统设置里面设置了一个代理服务器，让软件可以直接跳到用系统代理设置中直接连接代理服务器，而不需要单独设置
+所有的软件都知道系统内有一个代理服务器可以链接，只要跟随系统代理设置就可以连接，无需额外的配置
+一般只有浏览器会自动的调用系统代理进行连接，其他大部分应用不会自己启动系统代理连接，需要手动在软件内设置
+
+系统代理分为三种模式：直连模式，PAC模式，全局代理
+
+直连模式：在系统代理设置中关闭代理，使启动了系统代理的软件直接连接网络（一般是浏览器），但是 并没有关闭本地构建的代理服务器，手动配置的代理服务的软件还可以运行
+
+PAC模式(proxy-auto-config)代理自动配置，是网页浏览器技术，定义浏览器如何自动的选择适当的代理服务器来访问一个网页
+PCA文件包含一个jiavascript函数，“FindProxyForURL（url，host）”这个函数返回一个或者多个访问规则字符串，用户根据代理规则选择访问网站是否经过代理。">
+<meta property="og:title" content="系统代理：直连模式，PAC模式，全局代理">
+<meta property="og:description" content="系统代理模式：
+在系统设置里面设置了一个代理服务器，让软件可以直接跳到用系统代理设置中直接连接代理服务器，而不需要单独设置
+所有的软件都知道系统内有一个代理服务器可以链接，只要跟随系统代理设置就可以连接，无需额外的配置
+一般只有浏览器会自动的调用系统代理进行连接，其他大部分应用不会自己启动系统代理连接，需要手动在软件内设置
+
+系统代理分为三种模式：直连模式，PAC模式，全局代理
+
+直连模式：在系统代理设置中关闭代理，使启动了系统代理的软件直接连接网络（一般是浏览器），但是 并没有关闭本地构建的代理服务器，手动配置的代理服务的软件还可以运行
+
+PAC模式(proxy-auto-config)代理自动配置，是网页浏览器技术，定义浏览器如何自动的选择适当的代理服务器来访问一个网页
+PCA文件包含一个jiavascript函数，“FindProxyForURL（url，host）”这个函数返回一个或者多个访问规则字符串，用户根据代理规则选择访问网站是否经过代理。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://Ghost-Kang.github.io/post/xi-tong-dai-li-%EF%BC%9A-zhi-lian-mo-shi-%EF%BC%8CPAC-mo-shi-%EF%BC%8C-quan-ju-dai-li.html">
+<meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
 <title>系统代理：直连模式，PAC模式，全局代理</title>
 
 

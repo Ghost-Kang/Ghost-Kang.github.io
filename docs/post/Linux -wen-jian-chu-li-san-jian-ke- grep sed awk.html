@@ -9,7 +9,58 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="Linux 文件处理三剑客 grep sed awk">
+<meta name="description" content="grep（global regular expression print）
+
+能够在一个或者多个文件中，搜索某一个特定模式（正则表达式），此模式可以是单一的字符，字符串，单词和句子
+
+正则表达式：描述一组字符串的一个模式，regular expression 模仿了数学表达式，通过使用操作符将最小的表达式组合成了一个新的表达式，正则表达式通配符：：
+
+c* 匹配0个或者多个c的字符串
+. 将匹配任何一个字符，且只能是一个字符
+[XYZ] 匹配方括号中的任何一个字符
+[^xyz] 匹配除括号中的字符串外的所有字符串
+^ 锁定行的开头
+$锁定行的结尾
+
+grep命令格式
+grep 【选项】 模式 文件名字
+模式范围是字符串 或者正则表达式
+
+选项： -c 列出包含模式的行数， -i忽略大小写  -l带有匹配行的文件名， -n 每一行前面的行号  -v 列出没有匹配模式的行  -w
+
+sed:  vim采用交互式文本编辑器， sed是采用流编辑模式，明显的特征是 sed处理数据前，需要提前提供一组规则，sed按照此规则来编辑数据
+
+sed根据脚本命令来处理文本文件中的数据，执行顺序：
+1.每次仅读取一行内容
+2.根据提供的规则命令匹配并修改数据 。">
+<meta property="og:title" content="Linux 文件处理三剑客 grep sed awk">
+<meta property="og:description" content="grep（global regular expression print）
+
+能够在一个或者多个文件中，搜索某一个特定模式（正则表达式），此模式可以是单一的字符，字符串，单词和句子
+
+正则表达式：描述一组字符串的一个模式，regular expression 模仿了数学表达式，通过使用操作符将最小的表达式组合成了一个新的表达式，正则表达式通配符：：
+
+c* 匹配0个或者多个c的字符串
+. 将匹配任何一个字符，且只能是一个字符
+[XYZ] 匹配方括号中的任何一个字符
+[^xyz] 匹配除括号中的字符串外的所有字符串
+^ 锁定行的开头
+$锁定行的结尾
+
+grep命令格式
+grep 【选项】 模式 文件名字
+模式范围是字符串 或者正则表达式
+
+选项： -c 列出包含模式的行数， -i忽略大小写  -l带有匹配行的文件名， -n 每一行前面的行号  -v 列出没有匹配模式的行  -w
+
+sed:  vim采用交互式文本编辑器， sed是采用流编辑模式，明显的特征是 sed处理数据前，需要提前提供一组规则，sed按照此规则来编辑数据
+
+sed根据脚本命令来处理文本文件中的数据，执行顺序：
+1.每次仅读取一行内容
+2.根据提供的规则命令匹配并修改数据 。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://Ghost-Kang.github.io/post/Linux%20-wen-jian-chu-li-san-jian-ke-%20grep%20sed%20awk.html">
+<meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
 <title>Linux 文件处理三剑客 grep sed awk</title>
 
 
