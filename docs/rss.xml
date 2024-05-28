@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://Ghost-Kang.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://Ghost-Kang.github.io</link></image><lastBuildDate>Fri, 12 Apr 2024 07:01:46 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>Linux 文件处理三剑客 grep sed awk</title><link>https://Ghost-Kang.github.io/post/Linux%20-wen-jian-chu-li-san-jian-ke-%20grep%20sed%20awk.html</link><description>grep（global regular expression print）&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://Ghost-Kang.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://Ghost-Kang.github.io</link></image><lastBuildDate>Tue, 28 May 2024 16:14:02 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>Linux 文件处理三剑客 grep sed awk</title><link>https://Ghost-Kang.github.io/post/Linux%20-wen-jian-chu-li-san-jian-ke-%20grep%20sed%20awk.html</link><description>grep（global regular expression print）&#13;
 &#13;
 能够在一个或者多个文件中，搜索某一个特定模式（正则表达式），此模式可以是单一的字符，字符串，单词和句子&#13;
 &#13;
@@ -43,7 +43,7 @@ delimiter 表示分隔符，默认情况下为TAB；&#13;
 2. grep '[[:digit:]]:' /proc/interrupts | cut -c 1-4, 34-&#13;
 &#13;
 &#13;
-3. cut -f1 -d ':' /etc/passwd | head -15   //  cut -d ":" -f1  /etc/passwd | head -15&#13;
+3. cut -f1 -d ':' /etc/passwd | head -15   //  cut -d ':' -f1  /etc/passwd | head -15&#13;
 &#13;
 &#13;
 &#13;
